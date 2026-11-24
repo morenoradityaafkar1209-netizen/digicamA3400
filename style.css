@@ -51,3 +51,39 @@ dialog{border:1px solid var(--line);background:var(--card);color:var(--ink);padd
   .intro-actions { flex-wrap:wrap; }
   .photo-actions { flex-wrap:wrap; }
 }
+/* DIGICAM RADIO */
+.music-widget {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: 340px;
+  max-width: calc(100vw - 32px);
+  background: #eee9df;
+  border: 1px solid #b8ad9b;
+  padding: 10px;
+  z-index: 9999;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.music-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #51483d;
+  margin: 2px 2px 9px;
+}
+
+.music-widget iframe {
+  display: block;
+  border: 0;
+  border-radius: 8px;
+}
+
+@media (max-width: 480px) {
+  .music-widget {
+    right: 12px;
+    bottom: 12px;
+    width: 310px;
+  }
+}
